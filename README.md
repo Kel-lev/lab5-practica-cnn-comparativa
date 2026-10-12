@@ -2,6 +2,7 @@
 
 **Curso:** Inteligencia Artificial  
 **Docente:** Lazo Mamani, Juan Carlos
+
 **Unidad:** Unidad II - Redes Neuronales Convolucionales  
 **Tema:** Arquitecturas CNN y Análisis de Resultados (MNIST vs. Fashion-MNIST)   
 **Integrantes:** Delgado Ccorihuaman, Hamlet Nayeli / Leva Ayte, Kelma Ivonne
@@ -9,12 +10,7 @@
 ---
 
 ## Estructura del repositorio
-
 ![i1](/img1.png)
-
-### .gitignore
-
-
 ---
 
 ## Parte 1: Práctica con Dígitos Escritos a Mano (MNIST)
@@ -31,7 +27,7 @@ Se observa que:
 **¿Por qué es útil ver los datos antes de entrenar?**  
 Porque permite confirmar que las imágenes y sus etiquetas coinciden (evita errores de carga), entender el rango de valores (0–255) que luego se normalizará a 0–1, detectar problemas como imágenes mal centradas o corruptas, y tener una idea intuitiva de la dificultad del problema antes de introducirlo a la CNN.
 
-![Visualización MNIST](capturas/mnist_visualizacion.png)
+![i2](/img2.png)
 
 ### 2. Inspección de `model.summary()` y Shapes
 
@@ -74,7 +70,7 @@ El kernel solo puede deslizarse sobre posiciones donde quepan sus 3×3 píxeles 
 
 Quedando un tensor de **13×13×32**. No aprende parámetros (por eso su conteo es 0), solo reduce la resolución espacial y conserva las activaciones más relevantes.
 
-![model.summary MNIST](capturas/mnist_summary.png)
+![i3](/img3.png)
 
 ### 3. Análisis de Parámetros
 
@@ -152,7 +148,7 @@ Ambos coinciden, por lo que el modelo **acertó** en esta muestra. Esta comparac
 
 Además, la precisión global tras 1 época con 5000 muestras fue **0.7570 (75.70%)** y la pérdida **0.8231**. Es un valor razonable considerando que solo se entrenó con el 8.3% del dataset y por una única época.
 
-![Predicción MNIST](capturas/mnist_prediccion.png)
+![i5](/img5.png)
 
 ---
 
@@ -167,7 +163,7 @@ Al visualizar las primeras 9 imágenes de Fashion-MNIST se observan prendas de v
 - Las prendas tienen siluetas complejas, con variaciones de forma, textura y orientación.  
 - La similitud entre clases es mayor en Fashion-MNIST, lo que dificulta la clasificación.
 
-![Visualización Fashion-MNIST](capturas/fashion_visualizacion.png)
+![i4](/img4.png)
 
 ### 2. Análisis de la Salida Nominal
 
@@ -210,7 +206,7 @@ Además, la capa de salida también cambia porque recibe 128 entradas en lugar d
 - También incrementa el número total de parámetros (casi el doble) y el riesgo de sobreajuste, especialmente con pocas muestras de entrenamiento (5000 en esta práctica).  
 - En un problema más difícil como Fashion-MNIST, una capa densa más grande puede ayudar a capturar mejor las diferencias entre clases, pero requiere más datos o regularización para generalizar bien. En esta ejecución, la accuracy fue **0.6624 (66.24%)**, menor que en MNIST, lo cual confirma que el problema es más difícil incluso con más capacidad.
 
-![model.summary Fashion-MNIST](capturas/fashion_summary.png)
+![i6](/img6.png)
 
 ---
 
@@ -262,19 +258,6 @@ Distribución **más dispersa**: aunque la clase 9 (Botín) domina con 69.54%, h
 
 ## Parte 4: Subida Oficial del Proyecto a GitHub
 
-Una vez validados ambos scripts en la consola de VS Code, comprobada la visualización gráfica de los datasets y redactado el informe completo en el archivo `README.md`, se sube el repositorio remoto ejecutando los siguientes comandos en la terminal integrada:
-
-```bash
-git init
-git add .
-git commit -m "Entrega completa: Practica comparativa CNN MNIST y Fashion-MNIST con visualizacion y analisis"
-git branch -M main
-git remote add origin https://github.com/tu-usuario/nombre-de-tu-repo.git
-git push -u origin main
-```
-
-**Nota:** Crear previamente un repositorio vacío en GitHub sin README ni licencia para evitar conflictos.
-
-![Repositorio GitHub](capturas/github_repo.png)
+![i7](/img7.png)
 
 ---
