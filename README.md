@@ -1,6 +1,7 @@
 # Práctica CNN comparativa: MNIST vs Fashion-MNIST
 
 **Curso:** Inteligencia Artificial  
+**Docente:** Lazo Mamani, Juan Carlos
 **Unidad:** Unidad II - Redes Neuronales Convolucionales  
 **Tema:** Arquitecturas CNN y Análisis de Resultados (MNIST vs. Fashion-MNIST)   
 **Integrantes:** Delgado Ccorihuaman, Hamlet Nayeli / Leva Ayte, Kelma Ivonne
@@ -9,7 +10,7 @@
 
 ## Estructura del repositorio
 
-(/img1.png)
+![i1](/img1.png)
 
 ### .gitignore
 
