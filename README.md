@@ -2,7 +2,6 @@
 
 **Curso:** Inteligencia Artificial  
 **Docente:** Lazo Mamani, Juan Carlos
-
 **Unidad:** Unidad II - Redes Neuronales Convolucionales  
 **Tema:** Arquitecturas CNN y Análisis de Resultados (MNIST vs. Fashion-MNIST)   
 **Integrantes:** Delgado Ccorihuaman, Hamlet Nayeli / Leva Ayte, Kelma Ivonne
@@ -252,12 +251,7 @@ Distribución **más dispersa**: aunque la clase 9 (Botín) domina con 69.54%, h
 
 **Conclusión:** el dominio de los datos repercute directamente en la certeza de la red. A mayor complejidad visual (Fashion-MNIST), mayor dispersión en el vector Softmax y menor confianza en la predicción. En dominios simples y bien diferenciados (MNIST), el Softmax se concentra en una única clase y refleja alta certeza.
 
-![Predicción Fashion-MNIST](capturas/fashion_prediccion.png)
+![i6](/img6.png)
 
----
-
-## Parte 4: Subida Oficial del Proyecto a GitHub
-
-![i7](/img7.png)
 
 ---
