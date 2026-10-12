@@ -2,13 +2,14 @@
 
 **Curso:** Inteligencia Artificial  
 **Unidad:** Unidad II - Redes Neuronales Convolucionales  
-**Tema:** Redes Neuronales Convolucionales  
-**Integrantes:** Delgado CCorihuaman, Hamlet Nayeli / Leva Ayte, Kelma Ivonne
+**Tema:** Arquitecturas CNN y Análisis de Resultados (MNIST vs. Fashion-MNIST)   
+**Integrantes:** Delgado Ccorihuaman, Hamlet Nayeli / Leva Ayte, Kelma Ivonne
 
 ---
 
 ## Estructura del repositorio
 
+(/img1.png)
 
 ### .gitignore
 
@@ -200,8 +201,8 @@ Además, la capa de salida también cambia porque recibe 128 entradas en lugar d
 
 | Modelo | Capa Densa Oculta | Params totales |
 |--------|-------------------|----------------|
-| MNIST | 64 neuronas | 121,930 |
-| Fashion-MNIST | 128 neuronas | 225,034 |
+| MNIST | 64 neuronas | 102,464 |
+| Fashion-MNIST | 128 neuronas | 204,928 |
 
 **Implicancias:**  
 - Aumenta la capacidad del modelo para aprender patrones más complejos, lo cual es útil para las siluetas de ropa.  
